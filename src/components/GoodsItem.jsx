@@ -5,6 +5,7 @@ function GoodsItem(props) {
         description,
         price,
         full_background,
+        addToBasket = Function.prototype,
     } = props;
 
     return (
@@ -19,6 +20,13 @@ function GoodsItem(props) {
             <div className='card-action'>
                 <button
                     className='btn'
+                    onClick={() =>
+                        addToBasket({
+                            id,
+                            name,
+                            price,
+                        })
+                    }
                 >
                     Buy
                 </button>
