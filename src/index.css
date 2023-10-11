@@ -81,3 +81,7 @@ nav {
   vertical-align: middle;
   color: #26a69a;
 }
+
+.basket-delete {
+  cursor: pointer;
+}
